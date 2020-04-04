@@ -1,0 +1,16 @@
+{
+  "name": "@tribecamp/placeholder-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch scss:dist",
+    "compile": "sass scss:dist --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
+}
