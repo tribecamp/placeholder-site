@@ -46,9 +46,26 @@ a {
     max-width: 600px;
   }
 
-  .socialsContainer {
-    margin-top: 25px;
+  .btnJoinDiscord {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #7289da;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
 
+    i, span {
+      vertical-align: middle;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  .socialsContainer {
     a {
       text-decoration: none;
       margin: 0 3px;

@@ -43,8 +43,21 @@ a {
   font-size: 18px;
   max-width: 600px;
 }
-.container .socialsContainer {
-  margin-top: 25px;
+.container .btnJoinDiscord {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #7289da;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.container .btnJoinDiscord i, .container .btnJoinDiscord span {
+  vertical-align: middle;
+}
+.container .btnJoinDiscord i {
+  margin-right: 5px;
 }
 .container .socialsContainer a {
   text-decoration: none;
