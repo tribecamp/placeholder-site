@@ -2,6 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 html {
@@ -18,6 +20,7 @@ a {
 }
 .navbar .logo {
   width: 130px;
+  fill: black;
 }
 
 .container {
