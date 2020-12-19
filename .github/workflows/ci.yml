@@ -13,7 +13,7 @@ jobs:
       run: yarn compile
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.6.4
-      if: github.ref == 'refs/heads/develop'
+      if: github.ref == 'refs/heads/prod'
       with:
         personal_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: .
