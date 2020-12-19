@@ -1,0 +1,23 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: yarn install
+    - name: Build CSS
+      run: yarn compile
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3.6.4
+      if: github.ref == 'refs/heads/develop'
+      with:
+        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
+        cname: tribecamp.com
+        user_name: 'GitHub Action'
+        user_email: 'action@github.com'
+        commit_message: 'Deploy 🚀'
