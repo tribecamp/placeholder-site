@@ -2,6 +2,10 @@ html,
 body {
   margin: 0;
   padding: 0;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1d1d1d;
+  }
 }
 
 html {
@@ -18,13 +22,16 @@ a {
 
   .logo {
     width: 130px;
-    fill: black;
   }
 }
 
 .container {
   text-align: center;
   padding: 120px 20px;
+
+  @media (prefers-color-scheme: dark) {
+    color: #dfdfdf;
+  }
 
   @media (max-width: 768px) {
     padding-top: 40px;
@@ -57,7 +64,8 @@ a {
     text-decoration: none;
     font-weight: bolder;
 
-    i, span {
+    i,
+    span {
       vertical-align: middle;
     }
 
@@ -73,7 +81,14 @@ a {
     }
 
     i {
-      color: gray;
+      @media (prefers-color-scheme: light) {
+        color: gray;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        color: #dfdfdf;
+      }
+
       font-size: 20px;
     }
   }

@@ -30,7 +30,17 @@
 
 <body>
   <div class="navbar">
-    <img src="./assets/img/logo-full.svg" alt="Tribecamp Logo" class="logo">
+    <picture>
+      <source 
+        srcset="./assets/img/logo-dark-mode.svg"
+        media="(prefers-color-scheme: dark)"
+      />
+      <source
+        srcset="./assets/img/logo-white-mode.svg"
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+      />
+      <img src="./assets/img/dark-mode.svg" loading="lazy" alt="Tribecamp Logo" class="logo" />
+    </picture>
   </div>
   <div class="container">
     <img class="illustration" src="./assets/img/illustration.svg" alt="Illustration">
