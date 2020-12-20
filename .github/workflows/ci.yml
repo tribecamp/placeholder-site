@@ -12,6 +12,7 @@ jobs:
     - name: Build CSS
       run: yarn compile
     - name: Commit files
+      if: github.ref == 'refs/heads/prod'
       run: |
         echo 'tribecamp.com' > CNAME
         git config --local user.email "action@github.com"
