@@ -19,7 +19,8 @@ jobs:
         echo 'tribecamp.com' > CNAME
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "Deploy 🚀 ${{ github.sha }}" -a
+        git add -A
+        git commit -m "Deploy 🚀 ${{ github.sha }}"
     - name: Deploy to GitHub Pages
       uses: ad-m/github-push-action@master
       if: github.ref == 'refs/heads/prod'
