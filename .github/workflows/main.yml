@@ -16,6 +16,7 @@ jobs:
     - name: Commit files
       if: github.ref == 'refs/heads/prod'
       run: |
+        cd dist
         echo 'tribecamp.com' > CNAME
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
