@@ -13,20 +13,14 @@ jobs:
       run: yarn lint
     - name: Build website
       run: yarn build
-    - name: Commit files
+    - name: Deploy files
       if: github.ref == 'refs/heads/prod'
-      run: |
-        cd dist
-        echo 'tribecamp.com' > CNAME
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add -A
-        git commit -m "Deploy 🚀 ${{ github.sha }}"
+      run: sh scripts/deploy.sh
     - name: Deploy to GitHub Pages
       uses: ad-m/github-push-action@master
       if: github.ref == 'refs/heads/prod'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: 'gh-pages'
-        directory: '.'
+        directory: 'dist'
         force: true
