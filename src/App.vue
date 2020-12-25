@@ -28,8 +28,8 @@ import SocialContainer from './components/SocialContainer.vue';
 export default {
   components: {
     SocialContainer,
-    NavbarContainer,
-  },
+    NavbarContainer
+  }
 };
 </script>
 
