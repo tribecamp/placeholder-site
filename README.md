@@ -1,7 +1,5 @@
-# Tribecamp Placeholder Site
-
-The placeholder site that's currently being displayed on [tribecamp.com](https://tribecamp.com) while we're offline.
+# tribecamp-status
+📢 The status page for Tribecamp.
 
 ## License
-
-This project is licensed under the MIT license.
+This project is licensed under an MIT license.
