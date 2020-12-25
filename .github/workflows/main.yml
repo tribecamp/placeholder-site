@@ -9,8 +9,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install dependencies
       run: yarn install
-    - name: Build CSS
-      run: yarn compile
+    - name: ESLint
+      run: yarn lint
+    - name: Build website
+      run: yarn build
     - name: Commit files
       if: github.ref == 'refs/heads/prod'
       run: |
