@@ -46,6 +46,9 @@ export default {
 
     &.fa-github {
       color: black;
+      @media (prefers-color-scheme: dark) {
+        color: white;
+      }
     }
     &.fa-linkedin {
       color: #0a66c2;

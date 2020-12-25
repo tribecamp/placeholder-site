@@ -39,12 +39,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-</style>
-
-<style lang="scss" scoped>
-.socialContainer {
-  margin-top: 10px;
-}
 html,
 body {
   margin: 0;
@@ -53,6 +47,12 @@ body {
   @media (prefers-color-scheme: dark) {
     background-color: #1d1d1d;
   }
+}
+</style>
+
+<style lang="scss" scoped>
+.socialContainer {
+  margin-top: 10px;
 }
 
 html {
