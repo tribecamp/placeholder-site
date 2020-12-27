@@ -6,16 +6,18 @@
         class="illustration"
         src="~@/assets/illustration.svg"
         alt="Illustration"
-      />
-      <h1 class="header">Binnenkort beschikbaar</h1>
+      >
+      <h1 class="header">
+        Binnenkort beschikbaar
+      </h1>
       <p class="desc">
         Ontdek een moderne online schoolomgeving met een oog voor privacy,
         transparantie en gebruiksvriendelijkheid.
       </p>
-      <!--<a class="btnJoinDiscord" href="https://discord.gg/3ZSWTfW">
-        <i class="fab fa-discord"></i>
+      <a class="btnJoinDiscord" href="https://discord.gg/k8cfqZkhqZ">
+        <i class="fab fa-discord" />
         <span>Join onze Discord-server</span>
-      </a>-->
+      </a>
       <social-container class="socialContainer" />
     </div>
   </div>
@@ -28,8 +30,8 @@ import SocialContainer from './components/SocialContainer.vue';
 export default {
   components: {
     SocialContainer,
-    NavbarContainer,
-  },
+    NavbarContainer
+  }
 };
 </script>
 
