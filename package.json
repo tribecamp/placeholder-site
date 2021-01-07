@@ -15,7 +15,7 @@
     "@babel/compat-data": "^7.12.1",
     "@tribecamp/eslint-config-base": "1.1.2",
     "@tribecamp/eslint-config-vue": "1.1.1",
-    "@vue/cli-plugin-babel": "~4.5.9",
+    "@vue/cli-plugin-babel": "~4.5.10",
     "@vue/cli-service": "~4.5.9",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.0.3",
